@@ -1,0 +1,19 @@
+<h1>"routing.module" convention issues:</h1>
+
+<p>
+  The problem with this convention, is that all nested sub modules' routes get
+  "flatten" into the same level (root) of the router. <br /><br />
+
+  Meaning, you cannot "nest" urls without explictly write their prefixes into
+  every "routing module"
+</p>
+<p>
+  Click on the second link and see it breaks in the console
+</p>
+
+<div>
+  <button routerLink="/settings">Go to /settings</button>
+  <br /><br />
+</div>
+
+<router-outlet></router-outlet>
